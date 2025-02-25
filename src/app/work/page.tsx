@@ -3,32 +3,32 @@ import { AspectRatio } from '@/components/ui/aspect-ratio'
 export default function Page() {
   const PROJECTS = [
     {
-      name: 'Project 1',
-      description: 'Lorem ipsum dolor sit amet',
-      liveLink: 'https://google.com',
+      name: 'Pom Pilot',
+      description: 'A web-based to-do list in the shape of a palm pilot. Built with JavaScript and packaged with Node.js webpack.',
+      liveLink: 'https://mflojo.github.io/pom-pilot/',
       previewImage: '/project1.png',
-      repoUrl: 'https://github.com',
+      repoUrl: 'https://github.com/mflojo/pom-pilot',
     },
     {
-      name: 'Project 2',
-      description: 'Lorem ipsum dolor sit amet',
-      liveLink: 'https://google.com',
+      name: 'Tic Tac Toe',
+      description: '2-player browser game of tic-tac-tie, connect 3 to win! Built with JavaScript.',
+      liveLink: 'https://mflojo.github.io/tic-tac-toe/',
       previewImage: '/project2.png',
-      repoUrl: 'https://github.com',
+      repoUrl: 'https://github.com/mflojo/tic-tac-toe',
     },
     {
-      name: 'Project 3',
-      description: 'Lorem ipsum dolor sit amet',
-      liveLink: 'https://google.com',
+      name: 'Calculator',
+      description: 'Web calculator to do basic functions, can even use decimals! Built with JavaScript',
+      liveLink: 'https://mflojo.github.io/calculator/',
       previewImage: '/project3.png',
-      repoUrl: 'https://github.com',
+      repoUrl: 'https://github.com/mflojo/calculator',
     },
     {
-      name: 'Project 4',
-      description: 'Lorem ipsum dolor sit amet',
-      liveLink: 'https://google.com',
+      name: 'Admin Dashboard',
+      description: 'Template for a dashboard UI.',
+      liveLink: 'https://mflojo.github.io/admin-dashboard/',
       previewImage: '/project4.png',
-      repoUrl: 'https://github.com',
+      repoUrl: 'https://github.com/mflojo/admin-dashboard',
     },
   ]
 
@@ -57,7 +57,7 @@ export default function Page() {
                   {project.name}
                 </h2>
 
-                <p className="mt-5 text-lg w450:text-base">
+                <p className="mt-5 text-lg w450:text-base text-gray-500">
                   {project.description}
                 </p>
 
@@ -67,14 +67,14 @@ export default function Page() {
                     href={project.liveLink}
                     target="_blank"
                   >
-                    Visit
+                    Live Demo
                   </a>
                   <a
                     className="border-border dark:border-darkBorder text-text shadow-light dark:shadow-dark cursor-pointer rounded-base border-2 bg-main px-4 py-2 text-center uppercase transition-all hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none dark:hover:shadow-none"
                     href={project.repoUrl}
                     target="_blank"
                   >
-                    Github
+                    Github Repo
                   </a>
                 </div>
               </div>
