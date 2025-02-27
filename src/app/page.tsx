@@ -71,7 +71,7 @@ export default function Home() {
         <h2 className="text-3xl font-semibold">Links</h2>
         <div className="mr-auto mt-5 flex w-full flex-wrap items-center gap-10">
           {links.map((link, id) => (
-            <a target="_blank" key={id} href={link.href} className="text-lg flex-col flex items-center">
+            <a target="_blank" key={id} href={link.href} className="text-lg flex-col flex items-center ease-out transition-transform duration-300 hover:scale-125">
               <link.icon title="" className="w-8 h-8" />
               <span className="text-sm mt-2">{link.label}</span>
             </a>
@@ -84,7 +84,7 @@ export default function Home() {
         <h2 className="text-3xl font-semibold">Skills</h2>
         <div className="mt-5 flex gap-10">
           {skills.map((skill, id) => (
-            <div key={id} className="flex flex-col items-center">
+            <div key={id} className="flex flex-col items-center transition-transform ease-out duration-300 hover:scale-125">
               <skill.icon className="w-8 h-8" />
               <span className="text-sm">{skill.label}</span>
             </div>
