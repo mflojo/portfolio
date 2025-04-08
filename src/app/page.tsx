@@ -11,6 +11,9 @@ import {
   SiMysql,
   SiLinux,
   SiCplusplus,
+  SiPostgresql,
+  SiDrizzle,
+  SiTypescript,
 } from '@icons-pack/react-simple-icons'
 
 export default function Home() {
@@ -38,9 +41,11 @@ export default function Home() {
     { icon: SiReact, label: 'React' },
     { icon: SiNodedotjs, label: 'Node.js' },
     { icon: SiTailwindcss, label: 'Tailwind' },
-    { icon: SiGit, label: 'Git' },
-    { icon: SiMysql, label: 'SQL' },
-    { icon: SiLinux, label: 'Linux' },
+    // { icon: SiGit, label: 'Git' },
+    { icon: SiPostgresql, label: 'PostgresSQL' },
+    // { icon: SiLinux, label: 'Linux' },
+    { icon: SiDrizzle, label: 'DrizzleORM' },
+    { icon: SiTypescript, label: 'TypeScript' },
   ]
 
   return (
@@ -55,15 +60,14 @@ export default function Home() {
         <div className="ml-6 text-right">
           <h3 className="text-3xl font-bold text-gray-500"> Hello! My name is</h3>
           <h1 className="text-7xl font-bold">Mathew Flojo</h1>
-          <p className="text-gray-500">{`I'm a developer based in Surrey, B.C., Canada.`}</p>
+          {/* <p className="text-gray-500">{`I'm a developer based in Surrey, B.C., Canada.`}</p> */}
         </div>
       </div>
 
       <br />
 
       <p className="text-gray-500">
-        {`I enjoy building and creating apps, solving problems, computers, escape rooms, and all things technology.
-        Check out my links down below & let's get in touch!`}
+        {`I'm a full-stack developer who loves creating web apps! Check out my latest work in the projects tab. I'm currently working as an AI Data Annotator in Vancouver, BC, Canada.`}
       </p>
 
       {/* Links Section */}
@@ -80,9 +84,9 @@ export default function Home() {
       </div>
 
       {/* Skills Section */}
-      <div className="mt-10 flex flex-col w-1/2">
+      <div className="mt-10 flex flex-col w-full max-w-4xl">
         <h2 className="text-3xl font-semibold">Skills</h2>
-        <div className="mt-5 flex gap-10">
+        <div className="mt-5 flex flex-wrap gap-10 gap-y-6">
           {skills.map((skill, id) => (
             <div key={id} className="flex flex-col items-center transition-transform ease-out duration-300 hover:scale-125">
               <skill.icon className="w-8 h-8" />

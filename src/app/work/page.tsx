@@ -3,6 +3,13 @@ import { AspectRatio } from '@/components/ui/aspect-ratio'
 export default function Page() {
   const PROJECTS = [
     {
+      name: 'MooTube',
+      description: 'Fully functional, mobile friendly YouTube clone. Upload a video and try out the AI-generated tools for titles, descriptions, and thumbnails!',
+      liveLink: 'https://moo-tube.vercel.app',
+      previewImage: '/project5.jpg',
+      repoUrl: 'https://github.com/mflojo/moo-tube',
+    },
+    {
       name: 'Pom Pilot',
       description: 'A web-based to-do list in the shape of a palm pilot. Built with JavaScript and packaged with Node.js webpack.',
       liveLink: 'https://mflojo.github.io/pom-pilot/',
