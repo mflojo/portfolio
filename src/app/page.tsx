@@ -42,9 +42,9 @@ export default function Home() {
     { icon: SiNodedotjs, label: 'Node.js' },
     { icon: SiTailwindcss, label: 'Tailwind' },
     // { icon: SiGit, label: 'Git' },
-    { icon: SiPostgresql, label: 'PostgresSQL' },
+    { icon: SiPostgresql, label: 'PostgreSQL' },
     // { icon: SiLinux, label: 'Linux' },
-    { icon: SiDrizzle, label: 'DrizzleORM' },
+    { icon: SiDrizzle, label: 'Drizzle' },
     { icon: SiTypescript, label: 'TypeScript' },
   ]
 
@@ -59,7 +59,7 @@ export default function Home() {
         />
         <div className="ml-6 text-right">
           <h3 className="text-3xl font-bold text-gray-500"> Hello! My name is</h3>
-          <h1 className="text-7xl font-bold">Mathew Flojo</h1>
+          <h1 className="text-7xl font-bold">Matthew Flojo</h1>
           {/* <p className="text-gray-500">{`I'm a developer based in Surrey, B.C., Canada.`}</p> */}
         </div>
       </div>
@@ -67,7 +67,7 @@ export default function Home() {
       <br />
 
       <p className="text-gray-500">
-        {`I'm a full-stack developer who loves creating web apps! Check out my latest work in the projects tab. I'm currently working as an AI Data Annotator in Vancouver, BC, Canada.`}
+        {`I'm a full-stack developer based in Surrey, BC, Canada who loves creating web apps! Check out my latest work in the projects tab. I'm a recent graduate from Langara College and I'm currently working as an AI Data Annotator with DataForce.`}
       </p>
 
       {/* Links Section */}

@@ -4,7 +4,7 @@ export default function Page() {
   const PROJECTS = [
     {
       name: 'MooTube',
-      description: 'Fully functional, mobile friendly YouTube clone. Upload a video and try out the AI-generated tools for titles, descriptions, and thumbnails!',
+      description: 'Fully functional, mobile friendly YouTube clone. Upload a video and try out the AI-generated tools for titles, descriptions, and thumbnails! Stack: Next, React, TypeScript, Tailwind, Postgres, OpenAI, Upstash Redis, Drizzle, tRPC.',
       liveLink: 'https://moo-tube.vercel.app',
       previewImage: '/project5.jpg',
       repoUrl: 'https://github.com/mflojo/moo-tube',
